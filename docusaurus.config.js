@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const config = {
   title: 'Symbiotik Documentation',
-  tagline: 'subtitle',
+  tagline: '',
   url: 'https://docs.symbiotik.co',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -39,6 +39,10 @@ const config = {
       },
     ],
   ],
+  i18n: {
+    defaultLocale: 'es',
+    locales: ['es', 'en'],
+  },
   themeConfig:
     ({
       colorMode: {
@@ -50,18 +54,23 @@ const config = {
           alt: 'Symbiotik logo',
           src: 'img/header-logo-light.png',
           srcDark: 'img/header-logo-dark.png',
+          href: 'https://docs.symbiotik.co/',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'manifesto',
             position: 'right',
-            label: 'Documentation',
+            label: 'Documentación',
           },
           {
             href: 'https://symbiotik.co',
-            label: 'Back to main site',
+            label: 'Volver al Sitio Principal',
             position: 'right',
+          },
+          {
+          type: 'localeDropdown',
+          position: 'right',
           },
         ],
       },
@@ -69,27 +78,31 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Documentation',
+            title: 'Documentación',
             items: [
               {
-                label: 'Introduction',
-                to: '/docs/intro',
+                label: 'Introducción',
+                to: '/docs/manifesto',
               },
               {
-                label: 'Understanding Environmental Frameworks',
-                to: '/docs/environmental-foundational-knowledge/understanding-environmental-frameworks'
+                label: 'Sobre Nosotros',
+                to: '/docs/about-us'
               },
               {
-                label: 'Environmental Operations',
-                to: '/docs/environmental-foundational-knowledge/environmental-operations'
+                label: 'La Misión',
+                to: '/docs/the-mission'
               },
               {
-                label: 'Environmental Markets',
-                to: '/docs/environmental-foundational-knowledge/environmental-markets'
+                label: 'Monitoreo y Presentación de Resultados',
+                to: '/docs/monitoring'
               },
               {
-                label: 'References',
-                to: '/docs/environmental-foundational-knowledge/references'
+                label: 'POW vs POS',
+                to: '/docs/pow-vs-pos'
+              },
+              {
+                label: 'Referencias',
+                to: '/docs/references'
               }
             ],
           },

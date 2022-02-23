@@ -3,7 +3,8 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
+
+import Translate, {translate} from '@docusaurus/Translate';
 
 import logo from '@site/static/img/logo.png';
 import icono from '@site/static/img/icono.png';
@@ -33,8 +34,12 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            See documentation
+            to="/docs/manifesto">
+            <Translate
+                  id="homepage.seeDocs.linkLabel"
+                  description="CTA Principal en Homepage - Ver Documentación">
+                  Ver Documentación
+            </Translate>
           </Link>
 
         </div>

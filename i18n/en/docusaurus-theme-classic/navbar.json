@@ -1,0 +1,10 @@
+{
+  "item.label.Documentación": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentación"
+  },
+  "item.label.Volver al Sitio Principal": {
+    "message": "Back to Main Site",
+    "description": "Navbar item with label Volver al Sitio Principal"
+  }
+}
